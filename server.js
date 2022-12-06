@@ -4,6 +4,9 @@ const payload = require('payload');
 require('dotenv').config();
 const app = express();
 
+var cors = require('cors')
+app.use(cors())
+
 // Redirect root to Admin panel
 app.get('/', (_, res) => {
   res.redirect('/admin');

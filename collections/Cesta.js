@@ -13,7 +13,7 @@ const Cesta = {
         {
             name: 'productos',
             type: 'relationship',
-            relationTo: 'product',
+            relationTo: 'producto',
             hasMany: false
         },
         {

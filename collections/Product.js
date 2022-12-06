@@ -1,5 +1,5 @@
 const Producto = {
-    slug: 'product',
+    slug: 'producto',
     admin: {
       useAsTitle: 'name',
     },
@@ -12,8 +12,8 @@ const Producto = {
     fields: [
         {
             name: 'src',
-            type: 'upload',
-            relationTo: 'media'
+            type: 'text',
+            required: true
         },
         {
             name: 'title',

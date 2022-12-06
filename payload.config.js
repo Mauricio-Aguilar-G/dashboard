@@ -11,7 +11,7 @@ import Cesta from './collections/Cesta';
 
 
 export default buildConfig({
-  serverURL: 'http://sneakershop',
+  serverURL: 'http://localhost:3000',
   admin: {
     user: Users.slug,
   },
