@@ -11,7 +11,7 @@ import Cesta from './collections/Cesta';
 
 
 export default buildConfig({
-  serverURL: 'http://localhost:3000',
+  serverURL: 'http://localhost:4000',
   admin: {
     user: Users.slug,
   },
