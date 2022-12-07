@@ -1,8 +1,13 @@
 const express = require('express');
 const payload = require('payload');
+const mongoose = require('mongoose');
 
 require('dotenv').config();
 const app = express();
+const options = {
+  useNewUrlParser: true,
+  useUnifiedTopology: true
+}
 
 var cors = require('cors')
 app.use(cors())
@@ -40,3 +45,7 @@ app.use('/api/vtoken', vToken);
 app.use('/api/ordenes', ordenes);
 
 app.listen(3000);
+
+mongoose.connect(process.env.MONGODB_URI, options)
+    .then( ()=> console.log('Conexion Satisfactoria:))))'))
+    .catch( (e)=> console.log('Error' + e))
